@@ -2,7 +2,7 @@
 My minimal nvim configs
 
 ### Install nVim
-##### (This method is using port one of the macOS package managers to install plugins)
+##### (This method is using port one of the macOS package managers)
 ``` 
 sudo port selfupdate
 sudo port install neovim
