@@ -25,6 +25,8 @@ Plug 'sheerun/vim-polyglot'
 " Gruvbox theme
 Plug 'morhetz/gruvbox'
 
+" Go Plugin
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
