@@ -16,18 +16,30 @@ Plug 'junegunn/seoul256.vim'
 Plug 'preservim/nerdtree'
 
 " Themes
-"Neovim theme"
 Plug 'joshdick/onedark.vim'
-"Lightline vim"
 Plug 'itchyny/lightline.vim'
-"Multiple language support"
 Plug 'sheerun/vim-polyglot'
-" Gruvbox theme
 Plug 'morhetz/gruvbox'
 
-" Go Plugin
+" Plugins
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-" List ends here. Plugins become visible to Vim after this call.
+Plug 'google/vim-maktaba'
+Plug 'google/vim-codefmt'
+Plug 'google/vim-glaive'
+
 call plug#end()
 
 colorscheme gruvbox
+
+augroup autoformat_settings
+  autocmd FileType bzl AutoFormatBuffer buildifier
+  autocmd FileType c,cpp,proto,javascript AutoFormatBuffer clang-format
+  autocmd FileType dart AutoFormatBuffer dartfmt
+  autocmd FileType go AutoFormatBuffer gofmt
+  autocmd FileType gn AutoFormatBuffer gn
+  autocmd FileType html,css,sass,scss,less,json AutoFormatBuffer js-beautify
+  autocmd FileType java AutoFormatBuffer google-java-format
+  autocmd FileType python AutoFormatBuffer yapf
+  " Alternative: autocmd FileType python AutoFormatBuffer autopep8
+  autocmd FileType vue AutoFormatBuffer prettier
+augroup END
