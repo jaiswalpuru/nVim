@@ -13,7 +13,8 @@ Plug 'tpope/vim-sensible'
 Plug 'junegunn/seoul256.vim'
 
 " Nerd tree theme for directories
-Plug 'preservim/nerdtree'
+Plug 'ryanoasis/vim-devicons'
+Plug 'preservim/nerdtree' 
 
 " Themes
 Plug 'joshdick/onedark.vim'
@@ -26,6 +27,7 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'google/vim-maktaba'
 Plug 'google/vim-codefmt'
 Plug 'google/vim-glaive'
+
 
 call plug#end()
 
