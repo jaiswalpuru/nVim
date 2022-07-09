@@ -1,9 +1,10 @@
-syntax on
-set number
-set autoindent
-set tabstop=4
-set shiftwidth=4
-set expandtab
+syntax on "syntax highlighting
+set number "show line numbers
+set autoindent "enable auto indentation
+set tabstop=4 "number of columns occupied by tab
+set shiftwidth=4 "width for autoindent
+set showmatch "show matching
+set expandtab "converts tab to whitespace
 
 " Plugins will be downloaded under the specified directory.
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
@@ -13,8 +14,8 @@ Plug 'tpope/vim-sensible'
 Plug 'junegunn/seoul256.vim'
 
 " Nerd tree theme for directories
-Plug 'ryanoasis/vim-devicons'
 Plug 'preservim/nerdtree' 
+Plug 'ryanoasis/vim-devicons'
 
 " Themes
 Plug 'joshdick/onedark.vim'
