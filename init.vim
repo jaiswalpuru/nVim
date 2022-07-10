@@ -3,8 +3,8 @@ set number "show line numbers
 set autoindent "enable auto indentation
 set tabstop=4 "number of columns occupied by tab
 set shiftwidth=4 "width for autoindent
-set showmatch "show matching
 set expandtab "converts tab to whitespace
+filetype plugin indent on
 
 " Plugins will be downloaded under the specified directory.
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
@@ -28,7 +28,7 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'google/vim-maktaba'
 Plug 'google/vim-codefmt'
 Plug 'google/vim-glaive'
-
+Plug 'bfrg/vim-cpp-modern'
 
 call plug#end()
 
